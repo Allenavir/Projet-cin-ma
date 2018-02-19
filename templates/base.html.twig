@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{% block title %}{% endblock %}</title>
+        {% block stylesheets %}
+            <!-- CSS -->
+            <link rel="stylesheet" href="{{ asset('css/commun.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}"> 
+            <!-- FONTS -->
+            <link href="http://fr.allfont.net/allfont.css?fonts=parklane" rel="stylesheet" type="text/css" />
+            <!-- FONT AWESOME-->
+            <script src="https://use.fontawesome.com/9649308e26.js"></script> 
+        {% endblock %}
+
+    </head>
+
+
+
+    <body>
+        {% block header %}
+             {{ include('header.html.twig') }}
+        {% endblock %}
+        {% block body %}{% endblock %}
+        {% block footer %}
+            {{ include('footer.html.twig') }}
+        {% endblock %}
+
+
+
+        {% block javascripts %}
+        <!-- POUR LE JQUERY -->
+        <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+        <!-- POUR LE FICHIER JS -->
+        <script type="text/javascript" src="{{ asset('js/avenir.js') }}"></script>
+        {% endblock %}
+    </body>
+
+
+
+</html>

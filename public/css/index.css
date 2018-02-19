@@ -1,0 +1,451 @@
+/************* ARTICLE *************/
+/*SLIDER*/
+#diaporama{
+    width:100%;
+    height: 400pt;
+    margin:auto;
+    position: relative;
+    z-index:99;
+}
+
+#diaporama img{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:400pt;
+}
+
+#diaporama .bt {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    font-size: 3.2em;
+    color:white;
+    text-align: center;
+    top:44%;
+    cursor: pointer;
+}
+
+#diaporama>.bt:hover {
+    color: #4b4747;
+}
+
+#diaporama>.Next {
+    right:0px;
+}
+
+#diaporama>.Prev {
+    left:0px;
+}
+
+#diaporama > figure {
+    position: absolute;      
+    top: 0;    
+    left: 0;   
+    margin: 0;
+    text-align: center;
+    width:100%;
+    height:auto;;
+    transition: 1s;
+}
+
+/* IMAGE TAILLE + TEXTE SURVOL */
+
+
+#article {
+    background-color:#f5f5f5;
+}
+
+#article .containerImages .titre, .section  {
+    font-size: 1em;
+    color: black;
+    font-weight: bold;
+}
+
+#article .containerImages {
+    padding: 10pt 10pt 10pt 10pt;
+}
+
+#article .containerImages .ligne1Article, .ligne2Article, .ligne3Article  {
+    padding-bottom: 10pt;
+}
+
+
+
+/*ensalle*/
+
+.enSalleImage {
+    background: url('../img/accueil/enSalle.jpg') no-repeat;
+    height: 270pt;
+    position: relative;
+    background-size: cover;
+}
+
+
+.enSalleImage:hover {
+    opacity: 0.4;
+}
+
+.enSalleArticle .enSalleText {
+    opacity: 0;
+    text-transform: uppercase;
+    width: 40%;
+    position: absolute;
+    top: 35%;
+    left:30%;
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold; 
+}
+
+.enSalleArticle:hover  .enSalleText {
+    opacity: 1;
+    z-index: 1;
+}
+
+.enSalleArticle:hover .enSalleText .titre {
+    border-bottom: 6pt solid red;
+    padding-bottom: 10pt;
+}
+
+/*prochainement*/
+.prochainementImage {
+    background: url('../img/accueil/rpo.jpg') no-repeat;
+    height: 270pt;
+    background-size: cover;
+}
+
+.prochainementImage:hover {
+    opacity: 0.4;
+}
+
+.prochainementArticle .prochainementText {
+    opacity: 0;
+    text-transform: uppercase;
+    width: 40%;
+    position: absolute;
+    top: 35%;
+    left:30%;
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold; 
+}
+
+.prochainementArticle:hover .prochainementText {
+    opacity: 1;
+    z-index: 1;
+}
+
+.prochainementArticle:hover .prochainementText .titre {
+    border-bottom: 6pt solid orange;
+    padding-bottom: 10pt;
+
+}
+
+/*interview*/
+.interviewImage {
+    background: url('../img/accueil/interview.jpg') no-repeat;
+    height: 270pt;
+    background-size: cover;
+}
+
+.interviewImage:hover {
+    opacity: 0.4;
+}
+
+.interviewArticle .interviewText {
+    opacity: 0;
+    text-transform: uppercase;
+    width: 40%;
+    position: absolute;
+    top: 35%;
+    left:30%;
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold; 
+}
+
+.interviewArticle:hover .interviewText {
+    opacity: 1;
+    z-index: 1;
+}
+
+.interviewArticle:hover .interviewText .titre {
+    border-bottom: 6pt solid yellow;
+    padding-bottom: 10pt;
+
+}
+
+/*video */
+.videoArticle iframe {
+    padding: 0pt;
+}
+/*actualite*/
+.actualiteImage {
+    background: url('../img/accueil/luke3.jpg') no-repeat;
+    height: 270pt;
+    background-size: cover;
+}
+
+.actualiteImage:hover {
+    opacity: 0.4;
+}
+
+.actualiteArticle .actualiteText {
+    opacity: 0;
+    text-transform: uppercase;
+    width: 40%;
+    position: absolute;
+    top: 35%;
+    left:30%;
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold; 
+}
+
+.actualiteArticle:hover .actualiteText {
+    opacity: 1;
+    z-index: 1;
+}
+
+.actualiteArticle:hover .actualiteText .titre {
+    border-bottom: 6pt solid #42f4a7;
+    padding-bottom: 10pt;
+
+}
+
+
+
+/*dvd*/
+
+.dvdImage {
+    background: url('../img/accueil/dvd.png') no-repeat;
+    background-size: cover;
+    height: 270pt;
+}
+
+.dvdImage:hover {
+    opacity: 0.4;
+}
+
+.dvdArticle .dvdText {
+    opacity: 0;
+    text-transform: uppercase;
+    width: 40%;
+    position: absolute;
+    top: 35%;
+    left:30%;
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold; 
+}
+
+.dvdArticle:hover .dvdText {
+    opacity: 1;
+    z-index: 1;
+}
+
+.dvdArticle:hover .dvdText .titre {
+    border-bottom: 6pt solid #41acf4;
+    padding-bottom: 10pt;
+
+}
+
+
+/*pub*/
+.pubImage {
+    background: url('../img/accueil/pubcoke2.jpg') no-repeat;
+    height: 270pt;
+    background-size: cover;
+}
+
+/*film indé*/
+.filmIndeImage {
+    background: url('../img/accueil/film_inde2.jpg') no-repeat;
+    height: 270pt;
+    background-size: cover;
+}
+
+.filmIndeImage:hover {
+    opacity: 0.4;
+}
+
+.filmIndeArticle .filmIndeText {
+    opacity: 0;
+    text-transform: uppercase;
+    width: 40%;
+    position: absolute;
+    top: 35%;
+    left:30%;
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold; 
+}
+
+.filmIndeArticle:hover .filmIndeText {
+    opacity: 1;
+    z-index: 1;
+}
+
+.filmIndeArticle:hover .filmIndeText .titre {
+    border-bottom: 6pt solid #7641f4;
+    padding-bottom: 10pt;
+
+}
+
+/*commentaires*/
+.commentairesImage {
+    background: url('../img/accueil/commentaires.jpg') no-repeat;
+    height: 270pt;
+    background-size: cover;
+}
+
+.commentairesImage:hover {
+    opacity: 0.4;
+}
+
+
+/************** FOOTER ***************/
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 6pt solid #4b4747;
+    font-size:1.3em;
+    text-align:center;
+} 
+ 
+#ligne1Footer { 
+    display: flex;
+    justify-content: center;
+    width:100%;
+    margin:auto;
+    padding-top: 45pt;
+}
+ 
+#ligne2Footer { 
+    display: flex;
+    justify-content: center;
+    width:100%;
+    margin:auto;
+}
+ 
+#ligne3Footer { 
+    display: flex;
+    width:100%;
+    margin:auto;
+    justify-content:center;
+    padding-bottom: 45pt;
+}
+ 
+ footer a {
+    text-decoration: none;
+    color:black;
+    padding:1%;
+}
+ 
+ footer a:hover {
+    text-decoration: none;
+    color:black; 
+}
+
+
+
+/************** RESPONSIVE *************/
+
+/* PC FIXE ET LAPTOP */
+
+@media screen and (min-width: 992px){
+    #containerBurger {
+        display: none;
+    }
+}
+
+/* TABLETTE */
+@media screen and (max-width: 991px) {
+    header #iconesContact{
+        display: none;
+    }
+
+    header #titre {
+        width: 100%;
+        margin-top: 0;      
+    }
+
+    #onglets ul li{
+        display: flex;
+        flex-direction: row;
+        font-size:1em; 
+    }
+
+    /* DIAPORAMA */
+    #diaporama {
+        display: none;
+    }
+
+    footer { 
+         font-size:1.1em;
+    }
+
+   
+   
+    .text {
+        color: #4b4747;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        font-size: 1em;
+        font-weight: 100;         
+    }  
+
+.ligne2Article {
+    display: flex;
+    justify-content: center;
+}
+
+.enSalleImage, .prochainementImage, .interviewImage, .pubImage, .actualiteImage, .dvdImage, .filmIndeImage, .commentairesImage {
+    height: 170pt;
+    }
+}
+/*
+    .enSalleText {
+    opacity: 1;
+    width: 30%;
+    position: absolute;
+    top: 35%;
+    left:40%;
+    font-size: 0.5em;
+    color: black;
+    font-weight: bold;
+}
+
+.ligne:hover .enSalleText, .prochainementText {
+    opacity: 0;
+}
+*/
+
+/* MOBILE - Smartphone */
+ @media screen and (max-width:768px) {
+    footer { 
+     font-size:0.7em;
+    }
+
+      
+       
+        .text {
+            color: #4b4747;
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+            font-size: 1em;
+            font-weight: 100;         
+        }  
+
+    .ligne2Article .videoArticle iframe {
+        padding: 0;
+        height: 170pt;
+    }
+ }

@@ -1,0 +1,47 @@
+{% extends "base.html.twig" %}
+
+{% block title %} PELLICULE {% endblock %}
+
+ {% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/prochainement.css') }}">       
+ {% endblock %}
+
+
+{% block body %}
+<article>
+    <div id="conteneur">
+            <div id="cetteSemaine"  >
+
+                <div id="ajout">
+                    <a href="{{ path('ajouter') }}">Ajouter un nouveau film</a></br><br>
+                 </div>
+
+                <h3>La semaine prochaine</h3>
+                <div class="CetteSemaine">
+                    {% for films in liste %} 
+                    <a href="{{ path('details', {'id': films.id}) }}"><img src="{{ asset(films.image)}}" alt="Image" /></a><br/><br/>
+                    {% endfor %}
+                </div>                                        
+            </div> 
+
+            <div id="Avenir"  >
+
+                <h3>Prochaines sorties dans vos cinémas</h3>
+                <div class="CetteSemaine">
+                        {% for films in liste %} 
+                        <a href="{{ path('details', {'id': films.id}) }}"><img src="{{ asset(films.image)}}" alt="Image" /></a><br/><br/>
+                        {% endfor %}
+                        </div>                 
+            </div> 
+        </div>             
+                                  
+    <div id="pub">
+        <img src="{{ asset('images/interviews/pub1.jpg') }}">
+    </div>
+                                            
+</article>
+
+ 
+
+ {% endblock %}

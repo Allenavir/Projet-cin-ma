@@ -1,0 +1,105 @@
+#article{
+    display: flex;
+    flex-flow:row wrap;
+    color:#4b4747;
+    justify-content: center;
+}
+
+
+#cetteSemaine {
+     margin-right:100pt;
+     margin-top:20pt;
+     margin-bottom:20pt;
+     width:100%;
+     height:auto;
+}
+  
+ #CetteSemaine,  #CetteSemainel0 {
+    width:100%;
+    margin:10pt;}
+
+
+#cetteSemaine img { 
+     width:90pt;
+     height:110pt;
+     padding-right:10pt;
+ }
+
+article #divbutton{
+  width:100%;
+  text-align:center;
+}
+
+article button {
+    background: #4b4747;
+    color:white;
+    border-radius:5pt;
+    border:none;
+    }
+
+
+#filmEnSalle{
+    margin-right:23pt;
+    margin-top:20pt;
+    margin-bottom:20pt;
+    width:100%;
+    height:auto;
+}
+
+#filmsEnSalle{
+    margin:10pt;
+}
+
+#filmEnSalle img { 
+    width:90pt;
+    height:110pt;
+    padding-right:10pt;
+}
+
+#monBoutton{
+    margin-right:5%;
+}
+
+
+#monBoutton2{
+    margin-right:5%;
+}
+
+
+#pub{
+    max-width:300px;
+}
+
+
+#pub img{ 
+    max-width:300px;
+    margin-top:50pt;
+}
+
+
+#CetteSemainel1, #filmsEnSallel1, #filmsEnSallel2 {
+    width:100%;
+    margin:10pt;
+    display:none;} 
+
+
+article img:hover{
+    opacity:0.4;
+    cursor: pointer;
+}
+
+
+ @media screen and ( max-width:768px){
+        #pub img{ 
+            max-width:150px;
+            margin-left:30pt;
+            margin-top:20pt;}}
+
+
+
+
+
+
+
+
+

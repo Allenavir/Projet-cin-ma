@@ -1,0 +1,91 @@
+/*************** BODY ****************/ 
+body {
+  font-family: 'ParkLaneNF', arial;
+}
+
+body, h1, h2, h3, form, ul, li, p{
+    margin: 0;
+    padding: 0;
+    color: #4b4747;
+}
+
+
+/************* ARTICLE *************/
+article{  
+    color:#4b4747;    
+    background-color: #f5f5f5;
+    display:flex;
+    width: 100%;
+}
+
+
+#conteneur {
+    width:70%;
+}
+
+
+#cetteSemaine, #Avenir {
+    padding-right:100pt;
+    padding-top:20pt;
+    padding-bottom:10pt;
+    padding-left:20pt;    
+    width:100%;
+    height:auto; 
+    
+}
+
+
+#cetteSemaine img, #Avenir img { 
+    width:100pt;
+    height:130pt;
+    margin:10pt;
+}
+
+.CetteSemaine{
+    display: flex;  
+    flex-flow: row wrap;  
+}
+
+
+#pub{
+    max-width:300px;   
+    min-width:200px;     
+}
+
+
+#pub img{ 
+    max-width:300px;
+    margin-top:50pt;
+    margin-bottom:50pt;
+}
+
+
+article img:hover{
+    opacity:0.4;
+    cursor: pointer;
+}
+
+
+
+@media screen and ( max-width:1080px){
+
+    #conteneur {
+        width:100%;
+    }
+
+
+#pub { 
+    display:none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+{% extends "base.html.twig" %}
+
+{% block title %} PELLICULE {% endblock %}
+
+ {% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/archive.css') }}">       
+ {% endblock %}
+
+
+{% block body %}
+
+<article id="article">
+        <h3 id="titre1" >{{films.nom}}</h3>
+        <div id="conteneur" class="container-fluid">
+           
+
+            <div id="fiche" class="row">
+                <div class="col-lg-3">
+                    <img src="{{ asset(films.image)}}">
+                </div>
+                <div class="col-lg-9">
+                    <p>
+                        <span class="gras">Un film de {{films.realisateur}}
+                            <br> Avec : {{films.acteurs}}</span>
+                        <br>
+                        <br>
+
+                        <span class="gras">Genres :</span> {{films.genre}}
+                        <br>
+                        <span class="gras">Durée :</span> {{films.duree}}
+                        <br> Sortie en salles le {{films.date|date("d/m/Y")}}</span>
+                        <br>
+                        <br>
+
+                        <span class="gras">Résumé du film</span>
+                        <br> {{films.resume}}
+                    </p>
+                </div>
+
+            </div>
+
+            <div id="galerieCom" class="row">
+                    
+                    <div id="galerie" class="col-lg-6 col-sm-12">
+                            <p><a href="{{ path('displayMediaForFilm', {'id': films.id}) }}">Galerie</a></p>
+                            <div class="row">
+                                    <div class="col-lg-6">{{ films.BO1 | raw }}</div>
+                                    <div class="col-lg-6">{{ films.BO2 | raw}}</div>
+                                </div>
+
+                            <div class="row">
+                                    <div class="col-lg-6"><img src="{{ asset(films.image1)}}"></div>
+                                    <div class="col-lg-6"><img src="{{ asset(films.image2)}}"></div>
+                            </div>
+
+                            <div class="row">
+                                    <div class="col-lg-6"><img src="{{ asset(films.image3)}}"></div>
+                                    <div class="col-lg-6"><img src="{{ asset(films.image4)}}"></div>
+                            </div>
+
+                    </div>
+                    
+                    <div id="com" class="col-lg-6">
+                            <div class="row">
+                                    <div class="col-lg-12">
+                                        <p>Notes de la presse</p>  
+                                        <p>{{films.note}} / 10 </p>
+                                    </div>  
+                            </div>
+                            <div class="row">
+                                    <div class="col-lg-12">
+                                        <p>Commentaires</p>
+                                        <p>Table Commentaires</p>   
+                                    </div> 
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </article>
+    <a href="{{ path('modifier', {'id': films.id}) }}">Modifier le produit</a><br/>
+    <a href="{{ path('supprimer', {'id': films.id}) }}">Supprimer le produit</a><br/><br/>
+</body>
+{% endblock %}
+
+
+

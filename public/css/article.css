@@ -1,0 +1,45 @@
+/************* ARTICLE *************/
+.article {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.article .slideImage{
+    background: url('../img/articles/wolverine2_copie.jpg') no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 400pt;
+    color: black;
+}
+
+.article .zoneText {
+    background-color: #f5f5f5;
+    width: 100%
+}
+.article .articleText {
+    background-color: white;
+    height: 350pt;
+    width: 70%;
+    margin: 20pt;
+}
+
+.article .articleText h1 {
+    font-size: 1em;
+}
+
+
+   
+  
+
+    
+
+
+
+
+
+
+
+
+

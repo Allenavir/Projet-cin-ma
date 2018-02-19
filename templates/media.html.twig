@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+
+{% block title %} PELLICULE {% endblock %}
+
+ {% block stylesheets %}
+    {{ parent() }}    
+ {% endblock %}
+
+
+{% block body %}
+<h2>Galerie d'images de {{ film.nom }}</h2>
+
+<div id="conteneur">
+{% for media in medias %} 
+<div class="imageEtSupprimer">
+<img src="{{ asset(media.image)}}" alt="Image" /><br/>
+<a href="{{ path('deleteOneMedia', {'id': media.id} ) }}">Supprimer ce media</a>
+</div>
+{% endfor %}
+</div>
+</br><br>
+
+<a href="{{ path('ajouterMedia') }}">Ajouter un nouveau media</a></br><br> 
+
+{% endblock %}

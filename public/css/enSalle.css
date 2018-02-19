@@ -1,0 +1,13 @@
+#article{
+    display: flex;
+    flex-flow:row wrap;
+    color:#4b4747;
+    justify-content: center;
+}
+
+
+#centrer{
+    text-align:center;
+    padding-top:100pt;
+    padding-left:50pt;
+}
